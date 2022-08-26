@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  min-height: 100vh;
+  display: flex;
+  font-family: "DM Sans";
+  font-size: 18px;
+}
+
+.cream {
+  color: hsl(27, 66%, 92%);
+}
+
+.vpale-orange {
+  color: hsl(33, 100%, 98%);
+}
+
+.dark-brown {
+  color: hsl(25, 47%, 15%);
+}
+
+.medium-brown {
+  color: hsl(28, 10%, 53%);
+}
+
+.container {
+  margin: auto;
+}
+
+.bal-header {
+  background-color: hsl(10, 79%, 65%);
+  width: 550px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 30px 40px 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content-info {
+  background-color: hsl(33, 100%, 98%);
+  width: 550px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 30px 45px;
+}
+
+.my-bal {
+  font-size: 1.1rem;
+}
+
+.money-bal {
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 8px;
+}
+
+.c-design {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 50%;
+}
+
+.c-design span {
+  width: 50px;
+  height: 50px;
+  border: 2px solid hsl(33, 100%, 98%);
+  border-radius: 50%;
+  position: absolute;
+  right: 65px;
+}
+
+.spend-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.graph-container {
+  padding: 20px 0 35px 0;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 3px hsl(27, 66%, 92%) solid;
+  align-items: flex-end;
+}
+
+.bar-graph-container {
+  height: 100%;
+  width: 50px;
+}
+
+.pop-up {
+  height: 40px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 5px;
+  position: relative;
+  width: max-content;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 8px;
+  font-weight: 700;
+  color: hsl(33, 100%, 98%);
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.bar-graph {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bar-graph:hover {
+  filter: brightness(120%);
+}
+
+.day-title {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+
+.total-info-container {
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 105px;
+  width: 100%;
+}
+
+.total-title {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.total-price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.percentage-container {
+  margin-bottom: 10px;
+}
+
+.percentage-val {
+  font-weight: 700;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: flex-end;
+}
+
+.percentage-title {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .bal-header {
+    width: 340px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .my-bal {
+    font-size: 1rem;
+  }
+
+  .money-bal {
+    font-size: 1.5rem;
+    padding-top: 5px;
+  }
+
+  .c-design {
+    width: 40px;
+    height: 40px;
+  }
+
+  .c-design span {
+    width: 40px;
+    height: 40px;
+    right: 40px;
+  }
+
+  .content-info {
+    width: 340px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .spend-title {
+    font-size: 1.4rem;
+  }
+
+  .graph-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+  .bar-graph-container {
+    width: 33px;
+  }
+
+  .pop-up {
+    font-size: 1rem;
+    position: relative;
+    padding: 3px;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+
+  .bar-graph {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .day-title {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+
+  .total-info-container {
+    padding: 0;
+    height: auto;
+  }
+
+  .total-title {
+    font-size: 0.95rem;
+  }
+
+  .total-price {
+    font-size: 2rem;
+  }
+
+  .percentage-container {
+    margin-bottom: 0;
+  }
+  .percentage-val {
+    font-size: 1rem;
+  }
+
+  .percentage-title {
+    font-size: 0.95rem;
+  }
+}
