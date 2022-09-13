@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dark-cyan {
+  color: hsl(158, 36%, 37%);
+}
+
+.vdark-blue {
+  color: hsl(212, 21%, 14%);
+}
+
+.dgrayish-blue {
+  color: hsl(228, 12%, 48%);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-grow: 0;
+  margin: auto;
+  width: 520px;
+  height: 390px;
+}
+
+.product-img {
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: cover;
+}
+
+.product-info {
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  padding: 25px;
+}
+
+.product-type {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.product-name {
+  font-family: "Fraunces";
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+.product-desc {
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.product-price {
+  display: flex;
+  margin: 20px 0;
+}
+
+.disc-price {
+  font-family: "Fraunces";
+  font-size: 1.8rem;
+}
+
+.orig-price {
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  margin: auto 20px;
+  text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 7px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 0.8rem;
+  margin: 0 7px 0 0;
+}
+
+.add-to-cart-btn:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 20px;
+    height: auto;
+    align-content: flex-start;
+  }
+
+  .product-img {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 40%;
+  }
+
+  .product-info {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    padding: 23px;
+  }
+
+  .product-type,
+  .orig-price {
+    font-size: 0.8rem;
+  }
+
+  .product-name {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .product-desc {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+
+  .disc-price {
+    font-size: 1.9rem;
+  }
+
+  .add-to-cart-btn {
+    font-size: 0.8rem;
+    padding: 15px 0;
+  }
+}
